@@ -15,6 +15,7 @@
     width: 65%;
 }
 
+/*COMMON TABLE STYLE*/
 .file-table {
     width: 100%;
     margin-bottom: 40px;  
@@ -55,6 +56,7 @@ th:first-child::after {
     border-top: 6px solid #ffffff;
 }
 
+/*DROPDOWN MENU*/
 .dropdown-menu-item {
     display: inline-block;
     position: relative;
@@ -73,7 +75,7 @@ th:first-child::after {
 
 .dropdown-submenu {
     position: absolute;
-    top: 55%;
+    z-index: 1;
     left: 0;
     display: none;
     background-color: #2c2c2c;
@@ -94,4 +96,32 @@ th:first-child::after {
 
 .dropdown-menu-item:hover > .dropdown-submenu {
     display: block;
+}
+
+/*CHECKBOX CUSTOME STYLE*/
+.table-checkbox td>label {
+    position: relative;
+}
+
+.table-checkbox input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    
+}
+
+.table-checkbox input[type="checkbox"]:checked + label:before {
+    background-color: #19a0fa;
+    border: 1px solid #19a0fa;
+}
+
+.table-checkbox td>label:before {
+    display: inline-block;
+    content: " ";
+    width: 14px;
+    height: 14px;
+    background-color: #2c2c2c;
+    border-radius: 2px;
+    border: 1px solid #7d7d7d;
 }
