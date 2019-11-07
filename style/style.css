@@ -167,17 +167,17 @@ svg {
 label {
     position: relative;
 }
+
 input[type="search"] {
     position: relative;
     width: 100%;
     padding: 10px 10px 10px 30px ;
     background-color: #444444;
     color: #a3a3a3;
-   border-radius: 5px;
-   border:none;
-   font-size: 16px;
+    border-radius: 5px;
+    border:none;
+    font-size: 16px;
 }
-
 
 .search-icon {
     position: absolute;
