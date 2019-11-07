@@ -10,7 +10,7 @@
 }
 
 .table-wrapper {
-    max-width: 960px;
+    max-width: 700px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -20,7 +20,8 @@
 .file-table {
     width: 100%;
     margin-bottom: 40px;
-    border-radius: 5px ;
+    border: 1px solid #7d7d7d;
+    border-radius: 5px;
       
 }
 
@@ -38,7 +39,11 @@
 }
 
 .file-table tr{
-    border: 1px solid #7d7d7d;
+    border-bottom: 1px solid #7d7d7d;
+}
+
+.file-table tr:last-child{
+    border-bottom: none;
 }
 
 .file-table th:first-child {
